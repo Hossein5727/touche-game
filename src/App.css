@@ -1,0 +1,54 @@
+.App {
+  max-width: 860px;
+  margin: 40px auto;
+}
+button {
+  background: none;
+  border: 2px solid #fff;
+  padding: 6px 12px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1em;
+}
+button:hover {
+  background: #c23866;
+  color: #fff;
+}
+
+.container-cards{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  position: relative;
+}
+
+.cards{
+  margin: 7px;
+  border-radius: 5px;
+  /* transition: all 0.6s ease; */
+}
+
+.container-cards .front{
+  transform: rotateY(90deg);
+  transition: all ease-in 0.2s;
+  position: absolute;
+}
+
+.filiped .front{
+  transform: rotateY(0deg);
+  transition-delay: 0.2s;
+}
+
+.container-cards .back{
+  transition: all ease-in 0.2s;
+  transition-delay: 0.2s;
+}
+
+.filiped .back{
+  transform: rotateY(90deg);
+  transition-delay: 0s;
+}
