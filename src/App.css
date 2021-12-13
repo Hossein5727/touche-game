@@ -33,6 +33,7 @@ button:hover {
 .cards{
   margin: 7px;
   border-radius: 5px;
+  cursor: pointer;
   /* transition: all 0.6s ease; */
 }
 
