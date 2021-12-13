@@ -64,6 +64,6 @@ button:hover {
 
 @media screen and (max-width:480px) {
  .cards{
-   width: 90px !important;
+   width: 100px !important;
  } 
 }
