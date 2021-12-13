@@ -17,6 +17,10 @@ button:hover {
   color: #fff;
 }
 
+.btn{
+  width: 50%;
+}
+
 .container-cards{
   display: flex;
   justify-content: center;

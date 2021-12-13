@@ -1,8 +1,9 @@
 import React from 'react'
 
-function SingleCard({ item, cover, handleChoice, filiped }) {
+function SingleCard({ item, cover, handleChoice, filiped, disabled }) {
 
     const handleClick = () => {
+        if(!disabled)
         handleChoice(item)
     }
 
