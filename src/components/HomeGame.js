@@ -26,6 +26,7 @@ function HomeGame() {
     const [choiceOne, setChoiceOne] = useState(null)
     const [choiceTwo, setChoiceTwo] = useState(null)
     const [disabled, setDisabled] = useState(false)
+    const [isShowName, setIsShowName] = useState(false)
     const navigate = useNavigate()
 
     const shuffleCards = () => {
@@ -83,10 +84,20 @@ function HomeGame() {
 
     }, [choiceOne, choiceTwo, card])
 
+    useEffect(() => {
+        setIsShowName(true)
+        setInterval(() => {
+            setIsShowName(false)
+        }, 4000);
+    }, [])
+
     return (
         <div className="App">
             <h1>Magic Match</h1>
             <button onClick={shuffleCards}>New Game</button>
+            {isShowName && (
+                <p className="writer">By Hossein Ghiasi</p>
+            )}
             <div className="container-cards">
                 {card && card.length > 0 && card.map((item) => (
                     <SingleCard

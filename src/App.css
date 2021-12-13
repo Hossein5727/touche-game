@@ -57,3 +57,7 @@ button:hover {
   transform: rotateY(90deg);
   transition-delay: 0s;
 }
+
+.writer{
+  font-size: 35px !important;
+}
